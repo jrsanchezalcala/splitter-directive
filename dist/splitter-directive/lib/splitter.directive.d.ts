@@ -1,6 +1,5 @@
 import { EventEmitter } from '@angular/core';
 import { ElementRef } from '@angular/core';
-import * as i0 from "@angular/core";
 /** @dynamic */
 export declare class SplitterDirective {
     private el;
@@ -24,7 +23,4 @@ export declare class SplitterDirective {
     addMutations(): void;
     reset(): void;
     getStyle(className: any): string;
-    static ɵfac: i0.ɵɵFactoryDef<SplitterDirective, never>;
-    static ɵdir: i0.ɵɵDirectiveDefWithMeta<SplitterDirective, "[splitterDirective]", never, { "vertical": "vertical"; "size": "size"; "splitclass": "splitclass"; "addstyle": "addstyle"; "addhoverstyle": "addhoverstyle"; }, { "onDropSplitter": "onDropSplitter"; }, never>;
 }
-//# sourceMappingURL=splitter.directive.d.ts.map

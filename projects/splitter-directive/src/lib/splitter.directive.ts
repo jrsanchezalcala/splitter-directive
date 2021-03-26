@@ -37,7 +37,7 @@ export class SplitterDirective {
     }
 
     init(){
-        if(document.readyState == "complete"){
+      
             this.parent.addEventListener("dragover",(event) => { event.preventDefault();})
             let childrens = this.parent.children.length;
             for(let i=1 ; i < childrens ; i++){
@@ -50,10 +50,8 @@ export class SplitterDirective {
             if(!this.observer){
                 this.addMutations();
             }
-        }
-        else{
-                this.init();
-        }
+        
+        
     }
 
     getSplitter(){

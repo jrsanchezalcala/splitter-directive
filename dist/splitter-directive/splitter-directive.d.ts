@@ -1,6 +1,5 @@
 /**
  * Generated bundle index. Do not edit.
  */
-/// <amd-module name="splitter-directive" />
 export * from './public-api';
-//# sourceMappingURL=splitter-directive.d.ts.map
+export { TestComponentComponent as ɵa } from './lib/test-component/test-component.component';

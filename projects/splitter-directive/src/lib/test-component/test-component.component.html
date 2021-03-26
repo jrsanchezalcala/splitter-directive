@@ -1,0 +1,121 @@
+<h1>EXAMPLES USING SPLITTER</h1>
+<div class="boxcomment">
+<div class="code">
+<pre><code>
+    &lt;style&gt;
+      {{".mainbox{
+            width:500px;
+            height:200px;
+        }
+        .boxmenu{
+            width:20%;
+            border:solid black 1px;
+
+        }
+        .box {
+            width:60%;
+            border:solid black 1px;
+        }"}}
+    &lt;/style&gt;
+    &lt;div splitterDirective class=&quot;mainbox&quot; &gt;
+        &lt;div class=&quot;boxmenu&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;box&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;boxmenu&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+</code></pre>
+</div>
+<div class="comment">
+    <p>In this example we can see a basic use in horizontal mode.</p>
+    <p>With class <code>.mainbox</code> we stablished the main size of the container of divs what we must have to define for a good function of the splitterDirective</p>
+    <p>With class <code>.box</code> and <code>.boxmenu</code> we stablished the initial width of the each div. </p>
+</div>
+</div>
+    <div splitterDirective class="mainbox" >
+        <div class="boxmenu"></div>
+        <div class="box"></div>
+        <div class="boxmenu"></div>
+    </div>
+    <br>
+    <br>
+<div class="boxcomment">
+    <div class="code">
+    <pre><code>
+        &lt;style&gt;
+           {{" .box4 {
+                width:25%;
+                border:solid black 1px;
+            }
+            "}}
+        &lt;/style&gt;
+        &lt;div splitterDirective [addstyle]=&quot;'border-left-color:black;border-left-width:10px'&quot; 
+        [addhoverstyle]=&quot;'border-left-color:yellow;border-left-width:10px'&quot; [size]=&quot;'200px'&quot; &gt;
+            &lt;div class=&quot;box4&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;box4&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;box4&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;box4&quot;&gt;&lt;/div&gt;
+        &lt;/div&gt;
+    </code></pre>
+</div>
+<div class="comment">   
+    <p>
+        In this example we use propery <code>size</code> to limit the height on horizontal splitter mode. 
+    </p>
+    <p>
+        The property <code>addstyle</code> and <code>addhoverstyle</code> we add custom styles for the splits. This way we can customize our splits or splits
+    </p>
+    <p>
+        With class <code>.box4</code> We define the initial width of each div
+    </p>
+
+</div>
+</div>
+    <div splitterDirective [addstyle]="'border-left-color:black;border-left-width:10px'" [addhoverstyle]="'border-left-color:yellow;border-left-width:10px'" [size]="'200px'" >
+        <div class="box4"></div>
+        <div class="box4"></div>
+        <div class="box4"></div>
+        <div class="box4"></div>
+    </div>
+    <br>
+    <br>
+    <div class="boxcomment">
+    <div class="code">
+    <pre><code>
+        &lt;style&gt;
+           {{".mainboxV{
+                height:400px;
+            }
+            .boxv {
+                height:33%;
+                border:solid black 1px;
+            }
+            .boxvmenu{
+                height: 100px;
+                border:solid black 1px;
+            
+            }
+            "}}
+        &lt;/style&gt;
+        &lt;div splitterDirective [vertical]=&quot;true&quot; class=&quot;mainboxV&quot;  [size]=&quot;'400px'&quot;&gt;
+            &lt;div class=&quot;boxv&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;boxv&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;boxv&quot;&gt;&lt;/div&gt;
+        &lt;/div&gt;
+
+    </code></pre>
+    </div>
+    <div class="comment">
+        <p>In this example we split in vertical mode setting a size of <code>600px</code> that in vertical case is the width.</p>
+        <p>Class <code>.mainboxV</code> set the style of the main container</p>
+        <p>Class <code>.boxvmenu</code> and boxv we set the initial height and style of the splits</p>
+    </div>
+</div>  
+    <div splitterDirective [vertical]="true" class="mainboxV"  [size]="'600px'">
+        <div class="boxvmenu "></div>
+        <div class="boxv"></div>
+        <div class="boxvmenu"></div>
+    </div>
+    <br>
+    <br>
+    <pre><code></code></pre>
+    
+

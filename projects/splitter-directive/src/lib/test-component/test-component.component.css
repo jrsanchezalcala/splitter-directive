@@ -1,0 +1,59 @@
+.boxcomment{
+    display:flex;
+    flex-direction : row;
+}
+.comment{
+    flex : 1;
+    overflow: auto;
+
+}
+.code{
+    flex : 0 auto;
+    padding : 0 40px;
+    overflow: auto;
+}
+.mainbox{
+    width:500px;
+    height:300px;
+}
+
+.boxmenu{
+    width:20%;
+    border:solid black 1px;
+
+}
+.box {
+    width:60%;
+    border:solid black 1px;
+}
+
+.box4 {
+    width:25%;
+    border:solid black 1px;
+}
+
+.boxv {
+    flex : 1 0 auto;
+    border:solid black 1px;
+}
+.boxvmenu{
+    height: 100px;
+    border:solid black 1px;
+
+}
+
+.boxb{
+    background-color: blue;
+}
+.boxr{
+    background-color: red;
+}
+
+.boxg{
+    background-color: green;
+}
+
+.mainboxV{
+    height:400px;
+}
+

@@ -3,9 +3,42 @@
 This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.6.
 
 
-Main Steps.
--1 Import module or Directie into your project
--2 add splitterDirective to elemente that is going to be splitted.
+## Get Started
+-1 Import SplitterDirectiveModule module.
+```
+@NgModule({ 
+    imports : [SplitterDirectiveModule] , 
+    .......
+})
+```
+
+-2 add splitterDirective to the parent element that is going to contain splits.
+
+```
+<div splitterDirective>
+    <div class="split1"></div>
+    <div class="split2"></div>
+    <div class="split3"></div>
+</div>
+```
+
+See Demos at https://jrsanchezalcala.github.io/splitter-directive/index.html
+
+## Inputs
+
+-Vertical mode :  use property "vertical"
+```
+<div splitterDirective [vertical]="'true'" >
+```
+-Size heigth if it's normal mode and width if it's in vertical mode with property "size". You can also size the main box also with css seting a custom class if it's easy for you
+```
+<div splitterDirective [size]="'1100px'">
+```
+
+-If you want to add custom style to the splits use properties "addstyle" and "addhoverstyle"
+```
+<div splitterDirective [addstyle]="'border-left-color:black;border-left-width:10px'" [addhoverstyle]="'border-left-color:yellow;border-left-width:10px'">
+```  
 
 ## Build
 

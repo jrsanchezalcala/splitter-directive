@@ -1,10 +1,12 @@
 # SplitterDirective
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.6.
-
-
 ## Get Started
--1 Import SplitterDirectiveModule module.
+-1 Install splitter-directive module with 
+```
+npm install splitter-directive --save
+``` 
+
+-2 Import SplitterDirectiveModule module.
 ```
 @NgModule({ 
     imports : [SplitterDirectiveModule] , 
@@ -12,7 +14,7 @@ This library was generated with [Angular CLI](https://github.com/angular/angular
 })
 ```
 
--2 add splitterDirective to the parent element that is going to contain splits.
+-3 add splitterDirective to the parent element that is going to contain splits.
 
 ```
 <div splitterDirective>

@@ -1,5 +1,7 @@
 # SplitterDirective
 
+Directive for angular that makes inner divs resizable on width or height (depending on vertical mode or not) and at the same time resizing its sibling to not overpass the limits of its parent . Useful for menus of an editor for example
+
 ## Get Started
 -1 Install splitter-directive module with 
 ```
